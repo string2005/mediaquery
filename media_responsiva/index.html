@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Media Query Responsiva</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+
+    </header>
+    <main>
+        <article>
+            <h2>Metanol em bebidas alcoolicas</h2>
+            <p>
+                O Brasil já registra 195 notificações por intoxicação por metanol no Brasil, segundo balanço do Ministério da Saúde divulgado na noite deste sábado (4).
+
+As notificações incluem casos confirmados e suspeitos, além de mortes. Do total de registros, 162 são em São Paulo (14 confirmados e 148 em investigação), incluindo duas mortes já confirmadas.
+
+Neste sábado (4), o governo brasileiro anunciou a compra de dois antídotos, fomepizol e etanol farmacêutico, para reforçar o tratamento de intoxicações por metanol no país.
+
+🔍 O metanol é um álcool usado industrialmente em solventes e outros produtos químicos. Ele é altamente perigoso quando ingerido. Inicialmente, ataca o fígado, que o transforma em substâncias tóxicas que comprometem a medula, o cérebro e o nervo óptico, podendo causar cegueira, coma e até morte. Também pode provocar insuficiência pulmonar e renal.</p>
+
+<h2>O g1 reuniu abaixo o que já se sabe até agora sobre a crise.</h2>
+
+<p>Como começou a crise do metanol?<br>
+Qual é a principal linha de investigação?<br>
+O que o governo tem feito para combater a adulteração?<br>
+Como descartar garrafas de destilados para evitar falsificação?<br>
+Como se proteger?<br>
+É seguro beber cerveja, vinho ou chope?<br>
+O que acontece no corpo após beber metanol?<br>
+Existem antídotos para o metanol?<br>
+Qual é o impacto para bares e outros estabelecimentos?<br>
+Quem são as vítimas?
+    </p>
+        <p>
+                O kernel é o núcleo central de um sistema operacional, servindo como a ponte essencial entre o hardware (como processador e memória) e o software (programas e aplicativos). Ele gerencia os recursos do sistema, incluindo memória, CPU, e dispositivos de entrada/saída, além de controlar a execução de processos e garantir a segurança e a comunicação entre as diferentes partes do sistema.</p>
+<h2>Funções principais do kernel:</h2>
+<p>Gerenciamento de Hardware: Controla e gerencia o acesso a componentes físicos como a CPU, a memória RAM e dispositivos de armazenamento, permitindo que os programas utilizem esses recursos de forma eficiente.</p>
+<p>
+    Gerenciamento de Processos: Supervisiona a criação, execução e o término de processos (programas em execução), agendando-os para que possam usar o processador. <br>
+    Gerenciamento de Memória: Aloca e libera memória para os programas, garantindo que cada processo tenha o espaço de memória necessário e que não haja conflitos. <br>
+    Gerenciamento de Dispositivos: Comunica-se com os dispositivos de hardware (como teclado, mouse, impressora) através de drivers, abstraindo suas complexidades para que os aplicativos não precisem conhecer os detalhes específicos de cada dispositivo. <br>
+    Chamadas de Sistema (System Calls): Fornece uma interface para que os programas solicitem serviços do kernel. Quando um aplicativo precisa acessar um recurso do sistema, ele envia uma chamada de sistema que o kernel processa. <br>
+    Segurança: Gerencia o controle de acesso e as permissões, isolando os processos uns dos outros e protegendo o sistema contra acesso não autorizado e código malicioso. <br>
+</p>
+<h2>Como funciona:</h2>
+<p>O kernel reside na memória do computador e atua como um intermediário. Quando um programa precisa de uma ação, como ler um arquivo ou enviar dados para a rede, ele faz uma chamada de sistema para o kernel. O kernel, por sua vez, traduz essa solicitação em instruções diretas para o hardware, gerencia a execução da tarefa e devolve o resultado para o programa. </p>
+<h2>Kernel Monolítico: </h2>
+<p>Todas as funcionalidades essenciais do sistema estão integradas em um único bloco de código. O kernel Linux é um exemplo, que pode incluir módulos para adicionar flexibilidade. Microkernel: Apenas as funcionalidades essenciais são mantidas no núcleo, e outras funções (como gerenciamento de arquivos ou rede) são executadas como serviços em espaços de usuário
+            </p>
+        </article>
+    </main>
+</body>
+<script>
+    function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+        } else {
+            itens.style.display = 'none'
+        }
+    }
+
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
+</script>
+</html>
